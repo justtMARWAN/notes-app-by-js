@@ -33,5 +33,11 @@ add.addEventListener("click", function (e) {
     item.appendChild(h2);
     //use the output
     output.appendChild(item);
+    //delete
+    inputTitle.value = '';
+    inputText.value = '';
   }
+  btndel.addEventListener('click',function(){
+    output.removeChild(this.parentElement)
+  })
 });
